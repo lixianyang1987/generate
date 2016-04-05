@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="generate"
+  id="myeclipse.1393833618522"
+  context-root="/generate"
+  j2ee-spec="6.0"
+  archive="generate.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

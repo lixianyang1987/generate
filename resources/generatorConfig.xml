@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >   
+<properties resource="generatorConfig.properties"/>
+<classPathEntry location="${jdbcDriverpath}" />
+  <context id="context1" >
+    <commentGenerator> 
+         <property name="suppressAllComments" value="true" />
+    </commentGenerator> 
+    <jdbcConnection driverClass="${jdbc.driver}" connectionURL="${jdbcDriverURL}" userId="${username}" password="${password}" />
+    <javaModelGenerator targetPackage="${modelpath}" targetProject="${projectname}" />
+    <sqlMapGenerator targetPackage="${mapperpath}" targetProject="${projectname}" />
+    <javaClientGenerator targetPackage="${mapperpath}" targetProject="${projectname}" type="XMLMAPPER" />
+   <!--  
+     <table tableName="T_REQ_SMS" domainObjectName="ReqSms">
+  	</table>
+  	<table tableName="T_SYNC_SJDY" domainObjectName="SyncSjdy">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_SYNC_SJDY_ID.nextval from dual"/> 
+  	</table>
+    <table tableName="T_OPERATE" domainObjectName="Operate">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_OPERATE_ID.nextval from dual"/> 
+  	</table> 
+  	  <table tableName="T_CHANNEL_APP" domainObjectName="ChannelApp">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_CHANNEL_APP_ID.nextval from dual"/> 
+  	</table> 
+  	 <table tableName="T_SYNC_SJDY" domainObjectName="SyncSjdy">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_SYNC_SJDY_ID.nextval from dual"/> 
+  	</table>
+  	 <table tableName="T_SYNC_ALL" domainObjectName="SyncAll">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_SYNC_ALL_ID.nextval from dual"/> 
+  	</table>
+  	<table tableName="T_REQ_SMS_COMMAND" domainObjectName="ReqSmsCommand">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_REQ_SMS_COMMAND_ID.nextval from dual"/> 
+  	</table> 
+  	<table tableName="T_SYNC_WYD" domainObjectName="SyncWyd">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_SYNC_WYD_ID.nextval from dual"/> 
+  	</table>
+  	<table tableName="T_APP_SERVER" domainObjectName="AppServer">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_APP_SERVER_ID.nextval from dual"/> 
+  	</table> 
+  	<table tableName="T_DICT" domainObjectName="Dict">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_DICT_ID.nextval from dual"/> 
+  	</table> 
+  	<table tableName="T_SDK_LOAD" domainObjectName="SdkLoad">
+  	  	 <generatedKey column="ID" sqlStatement="select SEQ_SDK_LOAD_ID.nextval from dual"/> 
+  	</table> 
+  	<table tableName="T_SYNC_ALL" domainObjectName="SyncAll">
+  	</table>
+  	 -->
+ 
+  	<table tableName="T_ACTIVATIONVOLUME" domainObjectName="TActivationVolume">
+  	  	  <generatedKey column="ID" sqlStatement="select SEQ_ACTIVATIONVOLUME_ID.nextval from dual"/> 
+  	</table> 
+  </context>
+</generatorConfiguration>
